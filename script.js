@@ -14,14 +14,14 @@ function render(data) {
     card.className = 'gallery-card';
     const image = document.createElement('img');
     image.src = item.image;
-    image.alt = `Abstract placeholder artwork for ${item.label}; not a game screenshot`;
+    image.alt = item.draft ? `Abstract placeholder artwork for ${item.label}; not a game screenshot` : `Project screenshot: ${item.caption}`;
     image.loading = index === 0 ? 'eager' : 'lazy';
     const frame = document.createElement('div');
     frame.className = 'gallery-image';
     frame.append(image);
     const tag = document.createElement('span');
     tag.className = 'image-label';
-    tag.textContent = 'PLACEHOLDER · NOT A SCREENSHOT';
+    tag.textContent = item.draft ? 'PLACEHOLDER · NOT A SCREENSHOT' : 'PROJECT SCREENSHOT';
     frame.append(tag);
     const meta = document.createElement('div');
     meta.className = 'gallery-meta';
