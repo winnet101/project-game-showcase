@@ -4,9 +4,9 @@ A static, one-page showcase for the Roblox cooperative Mars outpost game. Featur
 
 ## Screenshots
 
-The page now uses ten of the supplied screenshots: one launch-pad hero and nine gallery frames. The duplicate `preview.png` was left out. They are optimized WebP files in `assets/screenshots/`.
+The page uses ten supplied screenshots: one launch-pad hero and nine WebP frames placed alongside the mission, power, hazard, and job sections. The duplicate `preview.png` was left out. The palette follows the game HUD: dark blue-black, Mars orange, and the yellow, teal, and green status colors.
 
-To add more screenshots, upload files to `assets/screenshots/` in GitHub, then add or update an entry in the `gallery` array in `content.json`: set `image` to the file path, write an accurate `caption`, and set `draft` to `false`. The hero image path is set in `index.html`. Commit to `main`; GitHub Pages deploys automatically. Use images you have permission to share.
+To add or move a screenshot, upload it to `assets/screenshots/` and edit its entry in the `gallery` array in `content.json`. Set `image`, an accurate `caption`, and `section` to `mission`, `power`, `hazards`, or `jobs`. The hero image path is in `index.html`. Commit to `main`; GitHub Pages deploys automatically. Use images you have permission to share.
 
 Preview mode at `https://winnet101.github.io/project-game-showcase/?edit=1` previews selected files locally in your browser. It does not upload or publish them.
 

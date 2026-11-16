@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eee9dd">
+  <meta name="theme-color" content="#12151e">
   <meta name="description" content="Six players. Eight sols. One Mars outpost. Keep the crew alive in a cooperative Roblox mission trainer.">
   <meta property="og:title" content="Mars Outpost — Mission Trainer">
   <meta property="og:description" content="Six players. Eight sols. One outpost to keep alive.">
@@ -17,7 +17,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="topbar" id="top">
     <a class="wordmark" href="#top" aria-label="Mars Outpost home"><span class="brand-mark">MO<span>.</span></span><span class="brand-name">MISSION<br>TRAINER</span></a>
-    <nav aria-label="Main navigation"><a href="#mission">The mission</a><a href="#systems">Systems</a><a href="#field-notes">Field notes</a></nav>
+    <nav aria-label="Main navigation"><a href="#mission">The mission</a><a href="#systems">Systems</a><a href="#jobs">Crew work</a></nav>
     <a class="nav-link" href="https://www.roblox.com/games/105448697403731/" target="_blank" rel="noopener noreferrer">Open in Roblox <span aria-hidden="true">↗</span></a>
   </header>
   <main id="main">
@@ -40,6 +40,7 @@
       <div class="section-marker"><span>01</span><span>MISSION BRIEF</span></div>
       <div class="mission-intro"><div><p class="eyebrow">THE WHOLE CREW, ONE LIFE SUPPORT SYSTEM</p><h2 id="mission-title">Every decision<br>has a <em>cost.</em></h2></div><p>Players queue at the launch pad and head to a Mars outpost together. It’s not a race to collect things; it’s a shift-by-shift balancing act. Power spent on one system can’t be spent on another.</p></div>
       <div class="resource-band"><div class="resource-title">KEEP THESE<br>ABOVE ZERO <span>↘</span></div><div class="resource"><span class="resource-symbol">O₂</span><div><strong>Air</strong><small>Life support & hull integrity</small></div></div><div class="resource"><span class="resource-symbol">H₂O</span><div><strong>Water</strong><small>Use it. Recover it. Repair the recycler.</small></div></div><div class="resource"><span class="resource-symbol">＋</span><div><strong>Food</strong><small>Keep the greenhouse powered.</small></div></div></div>
+      <div class="inline-gallery mission-gallery" id="mission-shots" aria-label="Mission dashboard screenshot"></div>
     </section>
 
     <section class="power-section" id="systems" aria-labelledby="systems-title">
@@ -51,6 +52,7 @@
           <article class="system-note"><span class="system-index">SYS / 02</span><h3>Greenhouse</h3><p>Two power keeps food steady. Take it away to cover a shortfall elsewhere and the crew’s food supply starts to shrink.</p><span class="system-status">FOOD · 2 POWER TO HOLD</span></article>
           <article class="system-note"><span class="system-index">SYS / 03</span><h3>Comms</h3><p>Powered comms produces science and brings warnings from Earth. Radio takes 3–22 minutes to reach Mars; with Comms down, a storm warning may never arrive.</p><span class="system-status">SCIENCE · EARTH LINK</span></article>
         </div>
+        <div class="inline-gallery" id="power-shots" aria-label="Solar power screenshots"></div>
         <p class="power-footnote">The numbers are mission rules, not real-time telemetry.</p>
       </div>
     </section>
@@ -60,11 +62,13 @@
       <div class="hazard-heading"><div><p class="eyebrow">THE OUTPOST DOESN’T WAIT</p><h2 id="hazard-title">Work outside.<br><em>Or stay safe.</em></h2></div><p>Radiation warnings force a hard call. Get inside the shielded shelter and ride out the storm—or keep working outside and risk exposure. In shelter, you can’t run machines or take jobs. The backlog grows.</p></div>
       <div class="hazard-rule"><span class="hazard-stamp">☢</span><div><strong>Safety stops the shift.</strong><p>Once the storm passes, the crew comes back to a running outpost and a pile of work.</p></div><span class="hazard-arrow">↗</span></div>
       <div class="event-list"><div class="event-list-head"><span>MISSION ESCALATION</span><span>RANDOMIZED EACH ROUND</span></div><div class="event-row"><span class="event-step">01—02</span><span class="event-name">A quiet start</span><span class="event-copy">Sols 1 and 2 give the crew room to find a rhythm.</span></div><div class="event-row"><span class="event-step">03</span><span class="event-name">Recycler fault</span><span class="event-copy">Water recovery drops until someone repairs the system.</span></div><div class="event-row"><span class="event-step">04</span><span class="event-name">Dust storm</span><span class="event-copy">Sunlight falls; afterward, the panels need cleaning.</span></div><div class="event-row"><span class="event-step">05—07</span><span class="event-name">Radiation warnings</span><span class="event-copy">Two storms arrive. The second is more severe.</span></div><div class="event-row"><span class="event-step">LATER SOLS</span><span class="event-name">Cold & hull damage</span><span class="event-copy">Nights get colder. Meteorites can punch leaks in the hull.</span></div></div>
+      <div class="inline-gallery" id="hazard-shots" aria-label="Storm warning screenshots"></div>
     </section>
 
-    <section class="jobs-section" aria-labelledby="jobs-title">
+    <section class="jobs-section" id="jobs" aria-labelledby="jobs-title">
       <div class="page-width jobs-inner"><div class="section-marker"><span>04</span><span>THE SHIFT BOARD</span></div><div class="jobs-heading"><div><p class="eyebrow">SHORT JOBS, REAL CONSEQUENCES</p><h2 id="jobs-title">Keep moving.<br><em>Keep each other up.</em></h2></div><p>Overcooked-style timed jobs pop up around the base. They arrive faster as the mission advances and as more crew join. Miss too many and the whole outpost feels it.</p></div>
         <div class="job-grid"><div class="job"><span>01</span><strong>Harvest crops</strong><span class="job-icon">↗</span></div><div class="job"><span>02</span><strong>Swap air filters</strong><span class="job-icon">↗</span></div><div class="job"><span>03</span><strong>Dig for ice</strong><span class="job-icon">↗</span></div><div class="job"><span>04</span><strong>Collect rock samples</strong><span class="job-icon">↗</span></div><div class="job"><span>05</span><strong>Re-aim the dish</strong><span class="job-icon">↗</span></div></div>
+        <div class="inline-gallery" id="jobs-shots" aria-label="Shift and science job screenshots"></div>
         <p class="crew-note"><span>CO-OP, NOT SOLO HEROICS</span> Share machine upkeep. Take jobs. Patch hull damage together. Anyone can run a machine—just call out what the outpost needs.</p>
       </div>
     </section>
@@ -75,7 +79,7 @@
       <div class="roadmap"><div><p class="eyebrow">AFTER THIS MISSION</p><h3>On the horizon</h3></div><ul><li>More detailed 3D models, including NASA 3D Resources</li><li>A Moon outpost mode</li><li>Classroom mode</li><li>Localization</li></ul></div>
     </section>
 
-    <section class="gallery-section page-width" id="field-notes" aria-labelledby="gallery-title"><div class="section-marker"><span>06</span><span>FIELD NOTES</span></div><div class="gallery-heading"><div><p class="eyebrow">THE OUTPOST, THROUGH YOUR LENS</p><h2 id="gallery-title">Screens from<br><em>the surface.</em></h2></div><p>Mission snapshots from the outpost. Add more in-game frames whenever you’re ready.</p></div><div class="gallery-grid" id="gallery-grid" aria-live="polite"></div><div class="build-note"><span>BUILT WITH</span><span>ROBLOX STUDIO · LUAU · HTTPSERVICE / NASA API · GITHUB</span><span>SERVER-AUTHORITATIVE SIMULATION / VALIDATED CLIENT REQUESTS</span></div></section>
+    <div class="build-note page-width"><span>BUILT WITH</span><span>ROBLOX STUDIO · LUAU · HTTPSERVICE / NASA API · GITHUB</span><span>SERVER-AUTHORITATIVE SIMULATION / VALIDATED CLIENT REQUESTS</span></div>
 
     <section class="closing"><div class="page-width closing-inner"><p class="eyebrow">CREW CALL</p><h2>See you<br><em>on Mars.</em></h2><a class="button button-light" href="https://www.roblox.com/games/105448697403731/" target="_blank" rel="noopener noreferrer">Open in Roblox <span aria-hidden="true">↗</span></a><p class="access-note">Availability and access are controlled by Roblox.</p></div></section>
   </main>

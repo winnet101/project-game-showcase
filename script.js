@@ -7,8 +7,14 @@ function render(data) {
   document.querySelector('#hero-description').textContent = data.description;
   document.querySelector('#place-id').textContent = data.robloxPlaceId;
 
-  const gallery = document.querySelector('#gallery-grid');
-  gallery.replaceChildren(...data.gallery.map((item, index) => {
+  const sections = {
+    mission: document.querySelector('#mission-shots'),
+    power: document.querySelector('#power-shots'),
+    hazards: document.querySelector('#hazard-shots'),
+    jobs: document.querySelector('#jobs-shots')
+  };
+  Object.values(sections).forEach(section => section.replaceChildren());
+  data.gallery.forEach((item, index) => {
     const card = document.createElement('article');
     card.className = 'gallery-card';
     const image = document.createElement('img');
@@ -30,8 +36,8 @@ function render(data) {
     caption.textContent = item.caption;
     meta.append(name, caption);
     card.append(frame, meta);
-    return card;
-  }));
+    (sections[item.section] || sections.jobs).append(card);
+  });
 
   if (editMode) setupEditor(data);
 }
