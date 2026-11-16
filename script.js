@@ -4,7 +4,6 @@ const objectUrls = [];
 
 function render(data) {
   document.title = `${data.title} — Roblox`;
-  document.querySelector('#hero-title').textContent = data.title;
   document.querySelector('#hero-description').textContent = data.description;
   document.querySelector('#place-id').textContent = data.robloxPlaceId;
 
@@ -14,14 +13,14 @@ function render(data) {
     card.className = 'gallery-card';
     const image = document.createElement('img');
     image.src = item.image;
-    image.alt = item.draft ? `Abstract placeholder artwork for ${item.label}; not a game screenshot` : `Project screenshot: ${item.caption}`;
+    image.alt = item.draft ? `Abstract placeholder artwork for ${item.label}; not a game screenshot` : `Mars Outpost screenshot: ${item.caption}`;
     image.loading = index === 0 ? 'eager' : 'lazy';
     const frame = document.createElement('div');
     frame.className = 'gallery-image';
     frame.append(image);
     const tag = document.createElement('span');
     tag.className = 'image-label';
-    tag.textContent = item.draft ? 'PLACEHOLDER · NOT A SCREENSHOT' : 'PROJECT SCREENSHOT';
+    tag.textContent = item.draft ? 'ARTWORK · NOT GAMEPLAY' : 'MISSION SCREENSHOT';
     frame.append(tag);
     const meta = document.createElement('div');
     meta.className = 'gallery-meta';
@@ -34,39 +33,6 @@ function render(data) {
     return card;
   }));
 
-  document.querySelector('#detail-grid').replaceChildren(...data.details.map(item => {
-    const card = document.createElement('div');
-    card.className = 'detail-card';
-    const label = document.createElement('span');
-    label.className = 'detail-label';
-    label.textContent = item.label;
-    const value = document.createElement('span');
-    value.className = 'detail-value';
-    value.textContent = item.value;
-    if (item.draft) {
-      const tag = document.createElement('span');
-      tag.className = 'draft-tag';
-      tag.textContent = 'UNCONFIRMED';
-      value.append(tag);
-    }
-    card.append(label, value);
-    return card;
-  }));
-
-  const coverage = document.querySelector('#coverage');
-  const heading = document.createElement('div');
-  heading.className = 'coverage-title';
-  heading.textContent = 'INFORMATION COVERAGE';
-  coverage.replaceChildren(heading, ...data.coverage.map(item => {
-    const row = document.createElement('div');
-    row.className = 'coverage-row';
-    const topic = document.createElement('span');
-    topic.textContent = item.topic;
-    const status = document.createElement('span');
-    status.textContent = item.status;
-    row.append(topic, status);
-    return row;
-  }));
   if (editMode) setupEditor(data);
 }
 
