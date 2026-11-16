@@ -1,0 +1,22 @@
+{
+  "title": "Project",
+  "description": "A first look at our Roblox project.",
+  "robloxPlaceId": "105448697403731",
+  "universeId": "10777045580",
+  "details": [
+    { "label": "Experience", "value": "Details coming soon", "draft": true },
+    { "label": "Gameplay", "value": "Details coming soon", "draft": true },
+    { "label": "Players", "value": "Details coming soon", "draft": true },
+    { "label": "Release", "value": "Details coming soon", "draft": true }
+  ],
+  "coverage": [
+    { "topic": "Game title", "status": "Verified", "draft": false },
+    { "topic": "Roblox place link", "status": "Verified", "draft": false },
+    { "topic": "Gameplay, features, player count & release", "status": "Not provided", "draft": true }
+  ],
+  "gallery": [
+    { "label": "Frame 01", "caption": "A space for the first in-game view.", "image": "assets/placeholder-01.svg", "draft": true },
+    { "label": "Frame 02", "caption": "Replace this artwork with a game screenshot.", "image": "assets/placeholder-02.svg", "draft": true },
+    { "label": "Frame 03", "caption": "Real screenshots can be added at any time.", "image": "assets/placeholder-03.svg", "draft": true }
+  ]
+}
