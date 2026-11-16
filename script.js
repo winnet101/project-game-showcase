@@ -85,7 +85,7 @@ function setupEditor(data) {
   });
 }
 
-fetch('content.json').then(response => {
+fetch('content.json?v=fd9d2a4').then(response => {
   if (!response.ok) throw new Error('content.json unavailable');
   return response.json();
 }).then(render).catch(() => render(fallback));
