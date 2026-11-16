@@ -4,9 +4,11 @@ A static, one-page showcase for the Roblox cooperative Mars outpost game. Featur
 
 ## Screenshots
 
-The gallery currently uses original artwork placeholders, clearly labeled as not gameplay screenshots. Preview your own images locally at `https://winnet101.github.io/project-game-showcase/?edit=1`; these previews stay in your browser and do not publish files.
+The page now uses ten of the supplied screenshots: one launch-pad hero and nine gallery frames. The duplicate `preview.png` was left out. They are optimized WebP files in `assets/screenshots/`.
 
-To publish screenshots, upload them to `assets/screenshots/` in the GitHub repository, then update the three `gallery` entries in `content.json`: set each `image` to its file path, write an accurate `caption`, and set `draft` to `false`. Commit both changes to `main`; GitHub Pages deploys automatically. Use images you have permission to share.
+To add more screenshots, upload files to `assets/screenshots/` in GitHub, then add or update an entry in the `gallery` array in `content.json`: set `image` to the file path, write an accurate `caption`, and set `draft` to `false`. The hero image path is set in `index.html`. Commit to `main`; GitHub Pages deploys automatically. Use images you have permission to share.
+
+Preview mode at `https://winnet101.github.io/project-game-showcase/?edit=1` previews selected files locally in your browser. It does not upload or publish them.
 
 ## Site files
 
@@ -14,5 +16,5 @@ To publish screenshots, upload them to `assets/screenshots/` in the GitHub repos
 - `styles.css` — responsive editorial layout
 - `script.js` — gallery rendering and local-only screenshot preview
 - `content.json` — editable title, details, and gallery
-- `assets/placeholder-*.svg` — decorative artwork, not game screenshots
+- `assets/screenshots/` — supplied gameplay screenshots, optimized as WebP
 - `.nojekyll` — serve static assets without Jekyll processing

@@ -15,8 +15,14 @@
     { "topic": "Mission status / access", "status": "Check Roblox" }
   ],
   "gallery": [
-    { "label": "01 / Surface", "caption": "Replace with an outpost screenshot.", "image": "assets/placeholder-01.svg", "draft": true },
-    { "label": "02 / Systems", "caption": "Show the crew balancing the power grid.", "image": "assets/placeholder-02.svg", "draft": true },
-    { "label": "03 / Crew", "caption": "Add a moment from a mission in progress.", "image": "assets/placeholder-03.svg", "draft": true }
+    { "label": "01 / Mission dashboard", "caption": "Air, water, food, battery and science at a glance.", "image": "assets/screenshots/mission-dashboard.webp", "draft": false },
+    { "label": "02 / Science lab", "caption": "Hold E to run an experiment and earn science.", "image": "assets/screenshots/science-lab.webp", "draft": false },
+    { "label": "03 / Dusty panels", "caption": "Dust cuts solar output; the crew has to clean the array.", "image": "assets/screenshots/dusty-panels.webp", "draft": false },
+    { "label": "04 / Dust storm", "caption": "Low sunlight, a draining battery and jobs piling up.", "image": "assets/screenshots/dust-storm.webp", "draft": false },
+    { "label": "05 / Aim the dish", "caption": "A timed job appears during the shift.", "image": "assets/screenshots/dish-job.webp", "draft": false },
+    { "label": "06 / Radiation warning", "caption": "The crew gets a clear instruction to shelter.", "image": "assets/screenshots/radiation-warning.webp", "draft": false },
+    { "label": "07 / Dust alert", "caption": "Event popups explain what happened and what to do next.", "image": "assets/screenshots/dust-warning.webp", "draft": false },
+    { "label": "08 / Swap the filter", "caption": "A short timer turns routine maintenance into a crew decision.", "image": "assets/screenshots/filter-job.webp", "draft": false },
+    { "label": "09 / Night shift", "caption": "Collecting a rock sample under the night sky.", "image": "assets/screenshots/night-sample.webp", "draft": false }
   ]
 }
